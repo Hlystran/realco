@@ -4,6 +4,12 @@
     font-weight: 400;
 }
 
+@font-face {
+    font-family: 'roboto';
+    src: url(../fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
 :root {
     --color-green-gray: #939878;
     --color-white: #fff;
@@ -67,7 +73,7 @@ header.cap ul .proper {
     grid-template-columns: 1fr 30px;
 }
 
-header.cap ul .proper:hover {
+header.cap ul a:hover {
     color: var(--color-coral);
 }
 
@@ -85,11 +91,21 @@ header.cap ul .cart {
     border-radius: 10px;
 }
 
+header.cap ul .cart:hover {
+    border: 3px solid var(--color-coral);
+}
+
 header.cap ul .find {
     background-color: var(--color-coral);
     color: var(--color-white);
     padding: 10px 20px;
     border-radius: 10px;
+}
+
+header.cap ul .find:hover {
+    border: 3px solid var(--color-coral);
+    padding: 7px 17px;
+    background-color: var(--color-white);
 }
 
 section.family {
@@ -163,6 +179,7 @@ section.family .left main form button:hover {
     background-color: var(--color-white);
     color: var(--color-coral);
     border: 3px solid var(--color-coral);
+    cursor: pointer;
 }
 
 section.family .right {
@@ -188,6 +205,59 @@ section.works header.media main {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-items: end;
+}
+
+section.works article.work {
+    display: grid;
+    justify-items: center;
+    padding-top: 120px;
+}
+
+section.works article.work h2 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+section.works article.work div {
+    display: grid;
+    justify-items: center;
+}
+
+section.works article.work p.best {
+    font-size: 18px;
+    color: var(--color-smoky-black);
+    padding-top: 20px;
+}
+
+section.works article.work span {
+    font-size: 18px;
+    color: var(--color-smoky-black);
+    padding-bottom: 60px;
+}
+
+section.works article.work main.nunc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+section.works article.work main.nunc div {
+    border: 2px solid var(--color-light-gray);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px var(--color-light-gray);
+}
+
+section.works article.work main.nunc div h1 {
+    font-size: 24px;
+    padding-top: 24px;
+    padding-bottom: 17px;
+    font-weight: 700;
+}
+
+section.works article.work main.nunc div p {
+    color: var(--color-smoky-black);
+    font-size: 16px;
 }
 
 @media screen and (max-width: 1323px) {
