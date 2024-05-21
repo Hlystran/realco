@@ -35,7 +35,7 @@
     justify-items: center;
 }
 
-header {
+header.cap {
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding: 20px 50px;
@@ -43,14 +43,14 @@ header {
 }
 
 
-header ul {
+header.cap ul {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     align-items: center;
     justify-items: center;
 }
 
-header ul a {
+header.cap ul a {
     text-decoration: none;
     color: var(--color-black);
     display: grid;
@@ -58,17 +58,25 @@ header ul a {
     justify-items: center;
 }
 
-header ul .proper {
+header.cap ul a svg:hover {
+    color: var(--color-coral);
+}
+
+header.cap ul .proper {
     display: grid;
     grid-template-columns: 1fr 30px;
 }
 
-header ul .search {
+header.cap ul .proper:hover {
+    color: var(--color-coral);
+}
+
+header.cap ul .search {
     display: grid;
     grid-template-columns: 30px 1fr;
 }
 
-header ul .cart {
+header.cap ul .cart {
     display: grid;
     grid-template-columns: 18px 1fr;
     column-gap: 5px;
@@ -77,7 +85,7 @@ header ul .cart {
     border-radius: 10px;
 }
 
-header ul .find {
+header.cap ul .find {
     background-color: var(--color-coral);
     color: var(--color-white);
     padding: 10px 20px;
@@ -146,13 +154,40 @@ section.family .left main form button {
     border-radius: 10px;
     padding: 10px;
     display: grid;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
+}
+
+section.family .left main form button:hover {
+    padding: 7px;
+    background-color: var(--color-white);
+    color: var(--color-coral);
+    border: 3px solid var(--color-coral);
 }
 
 section.family .right {
     display: grid;
     justify-content: end;
     align-items: end;
+}
+
+section.works {
+    padding: 60px 80px;
+}
+
+section.works header.media {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+section.works header.media p {
+    width: 200px;
+}
+
+section.works header.media main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: end;
 }
 
 @media screen and (max-width: 1323px) {
