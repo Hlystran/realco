@@ -125,35 +125,35 @@ section.family .left {
     height: 100%;
 }
 
-section.family .left main {
+section.family .left div.famil {
     padding: 0 80px;
     row-gap: 30px;
     display: grid;
 }
 
-section.family .left main div.place span {
+section.family .left div.famil div.place span {
     padding: 5px 8px;
     background-color: var(--color-light-gray);
     border-radius: 20px;
     font-size: 14px;
 }
 
-section.family .left main h2 {
+section.family .left div.famil h2 {
     font-size: 48px;
 }
 
-section.family .left main p {
+section.family .left div.famil p {
     color: var(--color-smoky-black);
     font-size: 20px;
 }
 
-section.family .left main form {
+section.family .left div.famil form {
     display: grid;
     column-gap: 20px;
     grid-template-columns: 2fr 1fr;
 }
 
-section.family .left main form input {
+section.family .left div.famil form input {
     font-size: 20px;
     color: var(--color-smoky-black);
     width: 1fr;
@@ -162,7 +162,7 @@ section.family .left main form input {
     border: none;
 }
 
-section.family .left main form button {
+section.family .left div.famil form button {
     color: var(--color-white);
     background-color: var(--color-coral);
     font-size: 20px;
@@ -174,7 +174,7 @@ section.family .left main form button {
     align-items: center;
 }
 
-section.family .left main form button:hover {
+section.family .left div.famil form button:hover {
     padding: 7px;
     background-color: var(--color-white);
     color: var(--color-coral);
@@ -201,63 +201,131 @@ section.works header.media p {
     width: 200px;
 }
 
-section.works header.media main {
+section.works header.media div {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-items: end;
 }
 
-section.works article.work {
+section.works div.work {
     display: grid;
     justify-items: center;
     padding-top: 120px;
 }
 
-section.works article.work h2 {
+section.works div.work h2 {
     font-weight: 700;
     font-size: 48px;
 }
 
-section.works article.work div {
+section.works div.work div {
     display: grid;
     justify-items: center;
 }
 
-section.works article.work p.best {
+section.works div.work p.best {
     font-size: 18px;
     color: var(--color-smoky-black);
     padding-top: 20px;
 }
 
-section.works article.work span {
+section.works div.work span {
     font-size: 18px;
     color: var(--color-smoky-black);
     padding-bottom: 60px;
 }
 
-section.works article.work main.nunc {
+section.works div.work div.nunc {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
 }
 
-section.works article.work main.nunc div {
+section.works div.work div.nunc article {
     border: 2px solid var(--color-light-gray);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 3px 5px var(--color-light-gray);
+    display: grid;
+    justify-items: center;
 }
 
-section.works article.work main.nunc div h1 {
+section.works div.work div.nunc article h1 {
     font-size: 24px;
     padding-top: 24px;
     padding-bottom: 17px;
     font-weight: 700;
 }
 
-section.works article.work main.nunc div p {
+section.works div.work div.nunc article p {
     color: var(--color-smoky-black);
     font-size: 16px;
+}
+
+section.comfort {
+    padding: 120px 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+    align-items: center;
+}
+
+section.comfort div.first {
+    display: grid;
+    row-gap: 20px;
+}
+
+section.comfort div.place {
+    padding: 5px 8px;
+    background-color: var(--color-light-gray);
+    border-radius: 20px;
+    font-size: 14px;
+    width: 97px;
+}
+
+section.comfort div.first h2 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+section.comfort div.first p {
+    color: var(--color-smoky-black);
+    font-size: 18px;
+}
+
+section.comfort div.first div.button {
+    display: grid;
+    grid-template-columns: 190px 200px;
+    column-gap: 20px;
+    align-items: center;
+}
+
+section.comfort div.first div.button a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+section.comfort div.first div.button a:hover {
+    color: var(--color-coral);
+}
+
+section.comfort div.first div.button button {
+    border: 3px solid var(--color-light-gray);
+    background-color: var(--color-white);
+    padding: 15px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+section.comfort div.first div.button button:hover {
+    border: 3px solid var(--color-coral);
+    color: var(--color-coral);
+}
+
+section.comfort img {
+    border-radius: 10px;
+    width: 100%;
 }
 
 @media screen and (max-width: 1323px) {
