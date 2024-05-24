@@ -51,9 +51,9 @@ header.cap {
 
 header.cap ul {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    align-items: center;
-    justify-items: center;
+    grid-template-columns: repeat(7, max-content);
+    column-gap: 30px;
+    justify-content: end;
 }
 
 header.cap ul a {
@@ -133,7 +133,7 @@ section.family .left div.famil {
 
 section.family .left div.famil div.place span {
     padding: 5px 8px;
-    background-color: var(--color-light-gray);
+    background-color: var(--color-smoky-white);
     border-radius: 20px;
     font-size: 14px;
 }
@@ -263,7 +263,7 @@ section.works div.work div.nunc article p {
 }
 
 section.comfort {
-    padding: 120px 80px;
+    padding: 60px 80px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
@@ -277,12 +277,12 @@ section.comfort div.first {
     padding-right: 80px;
 }
 
-section.comfort div.place {
+section.comfort div.first span {
     padding: 5px 8px;
-    background-color: var(--color-light-gray);
+    background-color: var(--color-smoky-white);
     border-radius: 20px;
     font-size: 14px;
-    width: 97px;
+    width: max-content;
 }
 
 section.comfort div.first h2 {
@@ -295,23 +295,23 @@ section.comfort div.first p {
     font-size: 18px;
 }
 
-section.comfort div.first div.button {
+div.button {
     display: grid;
     grid-template-columns: repeat(2, max-content);
     column-gap: 20px;
     align-items: center;
 }
 
-section.comfort div.first div.button a {
+div.button a {
     text-decoration: none;
     color: var(--color-black);
 }
 
-section.comfort div.first div.button a:hover {
+div.button a:hover {
     color: var(--color-coral);
 }
 
-section.comfort div.first div.button button {
+div.button button {
     border: 3px solid var(--color-light-gray);
     background-color: var(--color-white);
     padding: 15px 25px;
@@ -320,7 +320,7 @@ section.comfort div.first div.button button {
     font-size: 16px;
 }
 
-section.comfort div.first div.button button:hover {
+div.button button:hover {
     border: 3px solid var(--color-coral);
     color: var(--color-coral);
 }
@@ -329,6 +329,88 @@ section.comfort img {
     border-radius: 16px;
     object-fit: cover;
     height: 100%;
+    width: 100%;
+}
+
+section.forward {
+    padding: 60px 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+    align-items: center;
+    grid-template-rows: 600px;
+}
+
+section.forward img {
+    border-radius: 16px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+section.forward div.description {
+    display: grid;
+    row-gap: 20px;
+}
+
+section.forward div.description>span {
+    padding: 5px 8px;
+    background-color: var(--color-smoky-white);
+    border-radius: 20px;
+    font-size: 14px;
+    width: max-content;
+}
+
+section.forward div.description h2 {
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+section.forward div.description>p {
+    color: var(--color-smoky-black);
+    font-size: 18px;
+}
+
+section.forward div.description article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+}
+
+section.forward div.description article div.fast {
+    display: grid;
+    row-gap: 20px;
+}
+
+section.forward div.description article div.fast h3 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+div.button a {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+
+}
+
+div.button a p {
+    color: var(--color-black);
+
+}
+
+div.button a span {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border: solid var(--color-black);
+    border-width: 0 2px 2px 0;
+    transform: rotate(-45deg);
+}
+
+div.button a p:hover {
+    color: var(--color-coral);
 }
 
 @media screen and (max-width: 1323px) {
