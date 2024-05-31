@@ -49,14 +49,14 @@ header.cap {
 }
 
 
-header.cap ul {
+header.cap nav {
     display: grid;
     grid-template-columns: repeat(7, max-content);
     column-gap: 30px;
     justify-content: end;
 }
 
-header.cap ul a {
+header.cap nav a {
     text-decoration: none;
     color: var(--color-black);
     display: grid;
@@ -64,25 +64,25 @@ header.cap ul a {
     justify-items: center;
 }
 
-header.cap ul a svg:hover {
+header.cap nav a svg:hover {
     color: var(--color-coral);
 }
 
-header.cap ul .proper {
+header.cap nav .proper {
     display: grid;
     grid-template-columns: 1fr 30px;
 }
 
-header.cap ul a:hover {
+header.cap nav a:hover {
     color: var(--color-coral);
 }
 
-header.cap ul .search {
+header.cap nav .search {
     display: grid;
     grid-template-columns: 30px 1fr;
 }
 
-header.cap ul .cart {
+header.cap nav .cart {
     display: grid;
     grid-template-columns: 18px 1fr;
     column-gap: 5px;
@@ -91,18 +91,18 @@ header.cap ul .cart {
     border-radius: 10px;
 }
 
-header.cap ul .cart:hover {
+header.cap nav .cart:hover {
     border: 3px solid var(--color-coral);
 }
 
-header.cap ul .find {
+header.cap nav .find {
     background-color: var(--color-coral);
     color: var(--color-white);
     padding: 10px 20px;
     border-radius: 10px;
 }
 
-header.cap ul .find:hover {
+header.cap nav .find:hover {
     border: 3px solid var(--color-coral);
     padding: 7px 17px;
     background-color: var(--color-white);
@@ -388,6 +388,20 @@ section.forward div.description article div.fast h3 {
     font-size: 20px;
 }
 
+section.properties {
+    background-color: var(--color-smoky-white);
+}
+
+section.properties div.up {
+    display: grid;
+    justify-content: end;
+    align-items: end;
+}
+
+section.properties div.proper {
+    padding: 0 80px;
+}
+
 div.button a {
     display: grid;
     grid-template-columns: repeat(2, max-content);
@@ -409,8 +423,17 @@ div.button a span {
     transform: rotate(-45deg);
 }
 
-div.button a p:hover {
+div.button a:hover p {
     color: var(--color-coral);
+}
+
+div.button a:hover span {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border: solid var(--color-coral);
+    border-width: 0 2px 2px 0;
+    transform: rotate(-45deg);
 }
 
 @media screen and (max-width: 1323px) {
