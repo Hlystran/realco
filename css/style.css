@@ -277,13 +277,6 @@ section.comfort div.first {
     padding-right: 80px;
 }
 
-section.comfort div.first span {
-    padding: 5px 8px;
-    background-color: var(--color-smoky-white);
-    border-radius: 20px;
-    font-size: 14px;
-    width: max-content;
-}
 
 section.comfort div.first h2 {
     font-weight: 700;
@@ -400,6 +393,79 @@ section.properties div.up {
 
 section.properties div.proper {
     padding: 0 80px;
+    display: grid;
+    justify-items: center;
+}
+
+section.properties div.proper>span {
+    padding: 5px 8px;
+    background-color: var(--color-light-gray);
+    border-radius: 20px;
+    font-size: 14px;
+    width: max-content;
+}
+    
+section.properties div.proper>h2 {
+    font-weight: 700;
+    font-size: 48px;
+    padding-bottom: 80px;
+}
+
+section.properties div.proper>div.Y {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    padding-bottom: 80px;
+}
+
+section.properties div.proper>div.Y article {
+    background-color: var(--color-white);
+    height: 470px;
+    border-radius: 0 0 20px 20px;
+}
+
+section.properties div.proper>div.Y article img {
+    object-fit: cover;
+    height: 60%;
+    width: 100%;
+}
+
+section.properties div.proper>div.Y article div.coz {
+    padding: 20px;
+    display: grid;
+    row-gap: 5px;
+}
+
+section.properties div.proper>div.Y article div.coz h2 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+section.properties div.proper>div.Y article div.coz h3 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+section.properties div.proper>div.Y article div.coz>div {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+    padding: 15px 0 15px 0;
+    column-gap: 10px;
+}
+
+section.properties div.proper>div.Y article div.coz footer {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 30px;
+}
+
+section.properties div.proper>div.Y article div.coz footer div {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+    column-gap: 10px;
 }
 
 div.button a {
